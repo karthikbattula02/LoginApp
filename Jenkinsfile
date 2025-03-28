@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git branch: 'main', url: 'https://github.com/karthikbattula02/Jenkins.git
+                git branch: 'main', url: 'https://github.com/your-username/LoginApp.git'
             }
         }
         
@@ -23,8 +23,8 @@ pipeline {
             steps {
                 sh '''
                 cp target/LoginApp.war /Users/kbattula/ksoftwares/apache-tomcat-10.1.39/webapps
-                /path/to/tomcat/bin/shutdown.sh
-                /path/to/tomcat/bin/startup.sh
+                /Users/kbattula/ksoftwares/apache-tomcat-10.1.39/bin/shutdown.sh
+                /Users/kbattula/ksoftwares/apache-tomcat-10.1.39/bin/startup.sh
                 '''
             }
         }
