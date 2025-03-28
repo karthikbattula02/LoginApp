@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git branch: 'main', url: 'https://github.com/your-username/LoginApp.git'
+                git branch: 'main', url: 'https://github.com/karthikbattula02/Jenkins.git
             }
         }
         
