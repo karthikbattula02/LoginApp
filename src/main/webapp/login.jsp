@@ -5,7 +5,7 @@
 </head>
 <body>
     <form action="login" method="post">
-        Username: <input type="text" name="username" required><br>
+        Username: <input type="text" name="username" placeholder ="FirstName LastName" required><br>
         Password: <input type="password" name="password" required><br>
         <input type="submit" value="Login">
     </form>
